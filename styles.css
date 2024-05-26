@@ -151,6 +151,12 @@
   font-family: var(--common-font);
 }
 
+.longread {
+  display: grid;
+  gap: 96px;
+  grid-template-columns: 1fr;
+}
+
 .footer {
   padding: 16px;
   background-color: var(--blue-light);
@@ -187,13 +193,6 @@ grid-row: 1 / 3;
     padding: 24px 48px;
   }
 
-  .desctop-thumb {
-    display: grid;
-    grid-template-columns: 744px 360px;
-    /* grid-template-rows: repeat(3, 1fr); */
-    
-  }
-
  .blog {
 grid-column: 1 / 2;
 grid-row: 1 / 2;
@@ -202,6 +201,16 @@ grid-row: 1 / 2;
  .socials {
   display: grid;
   grid-column: 2 / 3;
+ }
+
+ .longread {
+  grid-template-columns: repeat(2, 744px 360px);
+  
+ }
+
+ .video {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
  }
 }
 
